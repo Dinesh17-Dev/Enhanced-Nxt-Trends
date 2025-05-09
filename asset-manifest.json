@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Enhanced-Nxt-Trends/static/css/main.ba9716f6.chunk.css",
+    "main.js": "/Enhanced-Nxt-Trends/static/js/main.f9bf9220.chunk.js",
+    "main.js.map": "/Enhanced-Nxt-Trends/static/js/main.f9bf9220.chunk.js.map",
+    "runtime-main.js": "/Enhanced-Nxt-Trends/static/js/runtime-main.7a3a891b.js",
+    "runtime-main.js.map": "/Enhanced-Nxt-Trends/static/js/runtime-main.7a3a891b.js.map",
+    "static/css/2.ed92bf4e.chunk.css": "/Enhanced-Nxt-Trends/static/css/2.ed92bf4e.chunk.css",
+    "static/js/2.8733bfd1.chunk.js": "/Enhanced-Nxt-Trends/static/js/2.8733bfd1.chunk.js",
+    "static/js/2.8733bfd1.chunk.js.map": "/Enhanced-Nxt-Trends/static/js/2.8733bfd1.chunk.js.map",
+    "index.html": "/Enhanced-Nxt-Trends/index.html",
+    "static/css/2.ed92bf4e.chunk.css.map": "/Enhanced-Nxt-Trends/static/css/2.ed92bf4e.chunk.css.map",
+    "static/css/main.ba9716f6.chunk.css.map": "/Enhanced-Nxt-Trends/static/css/main.ba9716f6.chunk.css.map",
+    "static/js/2.8733bfd1.chunk.js.LICENSE.txt": "/Enhanced-Nxt-Trends/static/js/2.8733bfd1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a3a891b.js",
+    "static/css/2.ed92bf4e.chunk.css",
+    "static/js/2.8733bfd1.chunk.js",
+    "static/css/main.ba9716f6.chunk.css",
+    "static/js/main.f9bf9220.chunk.js"
+  ]
+}
