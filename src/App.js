@@ -1,3 +1,4 @@
+// App.js
 import {Component} from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom'
 
@@ -17,7 +18,7 @@ class App extends Component {
     cartList: [],
   }
 
-  //   TODO: Add your code for remove all cart items, increment cart item quantity, decrement cart item quantity, remove cart item
+  //  TODO: Add your code for remove all cart items, increment cart item quantity, decrement cart item quantity, remove cart item
   removeAllCartItems = () => {
     this.setState({cartList: []})
   }
@@ -25,9 +26,7 @@ class App extends Component {
   addCartItem = product => {
     this.setState(prevState => {
       const {cartList} = prevState
-
       const productExists = cartList.find(item => item.title === product.title)
-
       if (productExists) {
         const updatedCartList = cartList.map(item =>
           item.title === product.title
@@ -36,14 +35,12 @@ class App extends Component {
         )
         return {cartList: updatedCartList}
       }
-
       return {cartList: [...cartList, product]}
     })
   }
 
   incrementCartItemQuantity = id => {
     const {cartList} = this.state
-
     const newCartList = cartList.map(i => {
       if (i.id === id) {
         return {...i, quantity: i.quantity + 1}
@@ -57,14 +54,12 @@ class App extends Component {
   decrementCartItemQuantity = id => {
     console.log('Decrement is working')
     const {cartList} = this.state
-
     const newList = cartList
       .map(item => {
         if (item.id === id) {
           if (item.quantity > 1) {
             return {...item, quantity: item.quantity - 1}
           }
-
           return null
         }
         return item
@@ -75,17 +70,12 @@ class App extends Component {
 
   removeCartItem = id => {
     const {cartList} = this.state
-    const newCartList = cartList.filter(i => {
-      if (i.id !== id) {
-        return id
-      }
-    })
+    const newCartList = cartList.filter(i => i.id !== id)
     this.setState({cartList: newCartList})
   }
 
   render() {
     const {cartList} = this.state
-
     return (
       <CartContext.Provider
         value={{

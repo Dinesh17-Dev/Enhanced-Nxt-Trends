@@ -1,10 +1,12 @@
+import React from 'react'
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
 import Header from '../Header'
 import CartListView from '../CartListView'
 
 import CartContext from '../../context/CartContext'
 import EmptyCartView from '../EmptyCartView'
-import CartSummary from '../CartSummary/index.js'
-
+import CartSummary from '../CartSummary'
 import './index.css'
 
 const Cart = () => (
@@ -38,9 +40,11 @@ const Cart = () => (
               </div>
             )}
           </div>
+          <Popup />
         </>
       )
     }}
   </CartContext.Consumer>
 )
+
 export default Cart
