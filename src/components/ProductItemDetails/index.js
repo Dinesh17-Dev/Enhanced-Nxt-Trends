@@ -125,7 +125,7 @@ class ProductItemDetails extends Component {
           title,
           totalReviews,
         } = productData
-        const {addCartItem, cartList} = value
+        const {addCartItem} = value
         const onClickAddToCart = () => {
           addCartItem({...productData, quantity})
         }
